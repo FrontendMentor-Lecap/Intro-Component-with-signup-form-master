@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --drk-blue: hsl(249, 10%, 26%);
+  --gry-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('/images/bg-intro-mobile.png');
+  background-color: var(--red);
+  color: white;
+}
+
+section {
+  margin: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  text-align: center;
+}
+
+.interaction {
+  padding: 4rem 0;
+}
+
+.interaction__button {
+  background-color: var(--blue);
+  padding: 1rem 5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.interaction__button span {
+  font-weight: 700;
+}
+
+.interaction__form {
+  background-color: white;
+  margin: 1rem 0;
+  padding: 1.6rem;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+form button {
+  background-color: var(--green);
+  padding: 1em;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+
+.terms {
+  color: var(--gry-blue);
+  text-align: center;
+  font-size: 0.5em;
+}
+
+.terms span {
+  color: var(--red);
+  font-weight: 700;
+}
