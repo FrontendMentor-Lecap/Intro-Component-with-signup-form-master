@@ -148,7 +148,7 @@ form button:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0 10vw;
+    margin: auto 10vw;
     height: 100vh;
   }
 
@@ -192,5 +192,12 @@ form button:hover {
 
   .terms {
     margin: 1.5em 1em;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
