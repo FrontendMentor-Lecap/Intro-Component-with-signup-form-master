@@ -16,7 +16,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap"
       rel="stylesheet"
     />
 
@@ -49,9 +49,11 @@
       </div>
 
       <div class="interaction">
-        <div class="interaction__button">
-          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
-        </div>
+        <a href="" class="tryit">
+          <div class="interaction__button" href="#">
+            <span>Try it free 7 days</span> then $20/mo. thereafter
+          </div>
+        </a>
         <div class="interaction__form">
           <form action="" id="form">
             <div class="input__container">
@@ -61,13 +63,17 @@
                 placeholder="First Name"
                 id="first-name"
                 aria-label="first-name"
+                class=""
               />
               <img
                 src="./images/icon-error.svg"
                 alt="error icon"
                 class="error-icon"
+                id="name-error-icon"
               />
-              <small class="error__message" id="name-error"></small>
+              <small class="error__message" id="name-error"
+                >First Name cannot be empty</small
+              >
             </div>
 
             <div class="input__container">
@@ -81,13 +87,14 @@
                 src="./images/icon-error.svg"
                 alt="error icon"
                 class="error-icon"
+                id="lastname-error-icon"
               />
-              <small class="error__message" id="name-error"></small>
+              <small class="error__message" id="lastname-error"></small>
             </div>
 
             <div class="input__container">
               <input
-                type="email"
+                type="text"
                 name="email"
                 id="email"
                 placeholder="Email Address"
@@ -97,8 +104,9 @@
                 src="./images/icon-error.svg"
                 alt="error icon"
                 class="error-icon"
+                id="email-error-icon"
               />
-              <small class="error__message" id="name-error"></small>
+              <small class="error__message" id="email-error"></small>
             </div>
 
             <div class="input__container">
@@ -113,8 +121,9 @@
                 src="./images/icon-error.svg"
                 alt="error icon"
                 class="error-icon"
+                id="password-error-icon"
               />
-              <small class="error__message" id="name-error"></small>
+              <small class="error__message" id="password-error"></small>
             </div>
             <button type="submit">Claim your free trial</button>
           </form>
