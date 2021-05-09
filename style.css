@@ -14,7 +14,7 @@
 }
 
 body {
-  background-image: url('/images/bg-intro-mobile.png');
+  background-image: url('./images/bg-intro-mobile.png');
   background-color: var(--red);
   color: white;
 }
@@ -161,6 +161,7 @@ form button:hover {
 @media (min-width: 1000px) {
   body {
     height: 100vh;
+    background-image: url('./images/bg-intro-desktop.png');
   }
 
   section {
