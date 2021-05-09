@@ -84,10 +84,15 @@ form {
   background: transparent;
 }
 
-.input__error {
+.input__container.error {
   border: 2px solid var(--red);
   color: var(--red);
   font-weight: 500;
+}
+
+.input__container.error input {
+  color: var(--red);
+  font-weight: 600;
 }
 
 .error-icon {
@@ -98,7 +103,12 @@ form {
   right: 5%;
 }
 
+.input__container.error .error-icon {
+  visibility: visible;
+}
+
 .error__message {
+  visibility: hidden;
   position: absolute;
   color: var(--red);
   font-size: 0.5rem;
@@ -108,8 +118,13 @@ form {
   right: 0%;
 }
 
+.input__container.error .error__message {
+  visibility: visible;
+}
+
 form input::placeholder {
   font-weight: 600;
+  color: var(--gry-blue);
 }
 
 form button {
@@ -137,6 +152,10 @@ form button:hover {
 .terms span {
   color: var(--red);
   font-weight: 700;
+}
+
+.terms a {
+  text-decoration: none;
 }
 
 @media (min-width: 1000px) {

@@ -20,6 +20,8 @@
       rel="stylesheet"
     />
 
+    <script defer src="script.js"></script>
+
     <title>Frontend Mentor | Intro component with sign up form</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -55,7 +57,7 @@
           </div>
         </a>
         <div class="interaction__form">
-          <form action="" id="form">
+          <form id="form">
             <div class="input__container">
               <input
                 type="text"
@@ -69,9 +71,9 @@
                 src="./images/icon-error.svg"
                 alt="error icon"
                 class="error-icon"
-                id="name-error-icon"
+                id="firstname-error-icon"
               />
-              <small class="error__message" id="name-error"></small>
+              <small class="error__message" id="firstname-error"></small>
             </div>
 
             <div class="input__container">
@@ -80,6 +82,7 @@
                 name="last-name"
                 placeholder="Last Name"
                 aria-label="last-name"
+                id="last-name"
               />
               <img
                 src="./images/icon-error.svg"
@@ -87,7 +90,9 @@
                 class="error-icon"
                 id="lastname-error-icon"
               />
-              <small class="error__message" id="lastname-error"></small>
+              <small class="error__message" id="lastname-error"
+                >Error Message</small
+              >
             </div>
 
             <div class="input__container">
@@ -128,7 +133,7 @@
 
           <p class="terms">
             By clicking the button you are agreeing to our
-            <span>Terms and Services</span>
+            <a href="#"><span>Terms and Services</span></a>
           </p>
         </div>
       </div>
